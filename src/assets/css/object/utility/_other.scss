@@ -1,0 +1,26 @@
+/* --------------------------------------------------------------------------------
+  ver6.0のテンプレに関する部分
+-------------------------------------------------------------------------------- */
+.nav {
+  zoom: 1;
+
+  &:after {
+    line-height: 0;
+
+    display: block;
+    visibility: hidden;
+    clear: both;
+
+    height: 0;
+
+    content: '.';
+  }
+}
+
+#accessibilityNav {
+  display: none;
+}
+
+#logtag {
+  display: none;
+}

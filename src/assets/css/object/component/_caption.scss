@@ -1,0 +1,74 @@
+@import '../../foundation/mixin/lineheight';
+@import '../../foundation/mixin/media';
+@import '../../foundation/variable/font';
+@import '../../foundation/variable/color';
+
+/* --------------------------------------------------------------------------------
+  caption
+-------------------------------------------------------------------------------- */
+.c-caption {
+  font-family: $gothic;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #999;
+  background: none;
+
+  @include lhCrop(1.5);
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+
+  &--inLeft {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+
+    @include sp {
+      bottom: 5px;
+      left: 5px;
+    }
+  }
+
+  &--inRight {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+    @include sp {
+      right: 5px;
+      bottom: 5px;
+    }
+  }
+
+  &--outLeft {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    padding-top: 10px;
+
+    @include sp {
+      position: static;
+
+      padding-top: 5px;
+
+      text-align: right;
+    }
+  }
+
+  &--outRight {
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    padding-top: 10px;
+
+    @include sp {
+      position: static;
+
+      padding-top: 5px;
+
+      text-align: right;
+    }
+  }
+}

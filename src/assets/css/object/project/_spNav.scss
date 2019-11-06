@@ -1,0 +1,86 @@
+@import '../../foundation/mixin/media';
+@import '../../foundation/variable/color';
+
+/* --------------------------------------------------------------------------------
+  spNav
+-------------------------------------------------------------------------------- */
+.p-spNav {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #c0e3e1;
+
+  @include sp {
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    width: 25%;
+    border-right: 1px solid $white;
+    border-left: 1px solid $white;
+
+    &:first-child {
+      border-left: 0;
+    }
+
+    &:last-child {
+      border-right: 0;
+    }
+
+    &--request {
+      background-color: #a69b84;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 10px 0;
+  }
+
+  &__linkInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+  }
+
+  &__requestIcon {
+    width: 31px;
+  }
+
+  &__outlineIcon {
+    width: 25px;
+  }
+
+  &__reserveIcon {
+    width: 36px;
+  }
+
+  &__mapIcon {
+    width: 26px;
+  }
+
+  &__telIcon {
+    width: 32px;
+  }
+
+  &__text {
+    margin-top: 10px;
+    font-size: 10px;
+    line-height: 1;
+    @include ls_em(3, 10);
+    color: #576665;
+
+    &--beige {
+      color: #eee9e0;
+    }
+  }
+}

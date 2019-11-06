@@ -1,0 +1,26 @@
+@import '../../foundation/mixin/media';
+
+/* --------------------------------------------------------------------------------
+  pc / sp表示
+-------------------------------------------------------------------------------- */
+.u-pcOnly {
+  @include sp {
+    display: none;
+  }
+}
+
+.u-spOnly {
+  display: none;
+
+  @include sp {
+    display: block;
+  }
+}
+
+.u-spOnlyInline {
+  display: none;
+
+  @include sp {
+    display: inline-block;
+  }
+}

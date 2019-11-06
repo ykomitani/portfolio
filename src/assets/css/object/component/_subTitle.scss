@@ -1,0 +1,21 @@
+@import '../../foundation/mixin/letterspacing';
+@import '../../foundation/mixin/lineheight';
+@import '../../foundation/mixin/media';
+@import '../../foundation/variable/font';
+
+/* --------------------------------------------------------------------------------
+  subTitle
+-------------------------------------------------------------------------------- */
+.c-subTitle {
+  font-family: $goudy;
+  font-size: 16px;
+  line-height: 1;
+  @include ls_em(1.6, 16);
+  text-align: center;
+  color: #a69b84;
+
+  @include sp {
+    font-size: 13px;
+    @include ls_em(1.3, 13);
+  }
+}

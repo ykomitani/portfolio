@@ -1,0 +1,5 @@
+@import '../function/vw';
+
+@mixin fz_vw($fz) {
+  font-size: get_vw($fz);
+}

@@ -1,0 +1,19 @@
+@import '../../foundation/mixin/letterspacing';
+@import '../../foundation/mixin/lineheight';
+@import '../../foundation/mixin/media';
+@import '../../foundation/variable/color';
+
+/* --------------------------------------------------------------------------------
+  subHeading
+-------------------------------------------------------------------------------- */
+.c-subHeading {
+  font-size: 18px;
+  line-height: 1.67;
+  @include lhCrop(1.67);
+  @include ls_em(2.7, 18);
+  color: $black;
+  @include sp {
+    font-size: 14px;
+    @include ls_em(2.1, 14);
+  }
+}

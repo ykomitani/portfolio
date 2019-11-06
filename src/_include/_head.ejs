@@ -1,0 +1,38 @@
+<%
+  var _default = json['default'];
+  for ( var key in _default ) {
+    if ( typeof page[key] === 'undefined' ) {
+      page[key] = _default[key];
+    }
+  }
+-%>
+
+<head>
+	<!-- meta -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<!-- title -->
+	<title><%= page.id != 'top' ? page.title + '｜' : page.title %>【公式】クレヴィア錦糸町ガーデンコースト｜新築分譲マンション</title>
+	<meta name="description" content="「クレヴィア錦糸町ガーデンコースト」公式ホームページ。JR総武線「錦糸町」駅徒歩12分、「大手町」駅へ直通12分。大横川親水公園隣接。東京都墨田区の新築分譲マンションです。" />
+	<meta name="keywords" content="錦糸町,新築,分譲,マンション,総武線,錦糸町駅,クレヴィア錦糸町ガーデンコースト,東京都墨田区,伊藤忠都市開発,伊藤忠ハウジング" />
+	<meta property="og:title" content="<%= page.id != 'top' ? page.title + '｜' : page.title %>【公式】クレヴィア錦糸町ガーデンコースト｜新築分譲マンション">
+	<meta property="og:description" content="「クレヴィア錦糸町ガーデンコースト」公式ホームページ。JR総武線「錦糸町」駅徒歩12分、「大手町」駅へ直通12分。大横川親水公園隣接。東京都墨田区の新築分譲マンションです。">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="https://cv-k.jp/">
+	<meta property="og:site_name" content="【公式】クレヴィア錦糸町ガーデンコースト｜新築分譲マンション">
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+	<!-- link -->
+	<link rel="start" href="/" title="ホーム" />
+	<link rel="canonical" href="https://cv-k.jp/<%= page.id != 'top' ? page.id + '/' : '' %>">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+	<!-- style -->
+	<link rel="stylesheet" type="text/css" href="<%= path; %>assets/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<link rel="stylesheet" href="<%= path; %>assets/js/vendor/aos/aos.css">
+	<link rel="stylesheet" href="<%= path; %>assets/crevia_common/css/swiper.min.css">
+  <link rel="stylesheet" href="<%= path; %>assets/crevia_common/css/crevia-common.css">
+</head>

@@ -1,0 +1,13 @@
+@import "../variable/breakpoint";
+
+@mixin pc {
+  @media screen and (min-width: $_pc) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: $_sp) {
+    @content;
+  }
+}

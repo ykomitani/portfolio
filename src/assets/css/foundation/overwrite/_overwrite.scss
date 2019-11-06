@@ -1,0 +1,12 @@
+/* --------------------------------------------------------------------------------
+  crevia-common.css change
+-------------------------------------------------------------------------------- */
+@media screen and (max-width: 640px) {
+  #crevia-common-modules .crevia-common-footer {
+    padding-bottom: 120px !important;
+  }
+}
+
+#crevia-common-modules .crevia-common-contact-links {
+  justify-content: center;
+}

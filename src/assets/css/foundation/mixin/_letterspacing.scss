@@ -1,0 +1,3 @@
+@mixin ls_em($px, $fz) {
+  letter-spacing: ($px / $fz) * 1em;
+}

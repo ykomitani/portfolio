@@ -1,0 +1,36 @@
+@import '../foundation/mixin/font-size';
+@import '../foundation/mixin/lineheight';
+@import '../foundation/mixin/media';
+@import '../foundation/variable/font';
+@import '../foundation/variable/color';
+
+/* --------------------------------------------------------------------------------
+  page
+-------------------------------------------------------------------------------- */
+.l-page {
+  min-width: 1100px;
+  font-family: $mincho;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  letter-spacing: .15em;
+  color: #666;
+  background-color: transparent;
+  font-feature-settings: 'palt';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include sp {
+    min-width: inherit;
+    font-size: 12px;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+}

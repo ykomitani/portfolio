@@ -1,0 +1,23 @@
+@import '../../foundation/mixin/letterspacing';
+@import '../../foundation/mixin/lineheight';
+@import '../../foundation/mixin/media';
+@import '../../foundation/variable/font';
+
+/* --------------------------------------------------------------------------------
+  text
+-------------------------------------------------------------------------------- */
+.c-text {
+  font-family: $gothic;
+  font-size: 14px;
+  line-height: 1.86;
+  @include lhCrop(1.86);
+  @include ls_em(2.1, 14);
+  @include sp {
+    font-size: 12px;
+    @include ls_em(2.1, 12);
+  }
+
+  &--center {
+    text-align: center;
+  }
+}

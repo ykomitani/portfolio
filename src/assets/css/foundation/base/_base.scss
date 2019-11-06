@@ -1,0 +1,30 @@
+body {
+	background-color: #fff;
+}
+
+a {
+	transition: .3s;
+	text-decoration: none;
+
+	background-color: transparent;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: top left;
+	color: #000;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+
+	vertical-align: top;
+}
+
+sup {
+	font-size: 10px;
+	vertical-align: text-top;
+}

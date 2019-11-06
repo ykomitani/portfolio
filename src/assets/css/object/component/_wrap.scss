@@ -1,0 +1,19 @@
+@import '../../foundation/mixin/font-size';
+@import '../../foundation/mixin/letterspacing';
+@import '../../foundation/mixin/lineheight';
+@import '../../foundation/mixin/media';
+@import '../../foundation/variable/color';
+@import '../../foundation/variable/font';
+
+/* --------------------------------------------------------------------------------
+  wrap
+-------------------------------------------------------------------------------- */
+.c-wrap {
+  width: 1000px;
+  margin: 0 auto;
+
+  @include sp {
+    width: auto;
+    padding: 0 calc(100 / 750 * 30vw);
+  }
+}
