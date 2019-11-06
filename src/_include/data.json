@@ -1,8 +1,10 @@
 {
 	"default": {
 		"id": "",
-		"title": "",
-		"mvTitle": "",
-		"mvCaption": ""
+		"title": ""
+	},
+	"top": {
+		"id": "top",
+		"title": "top"
 	}
 }
