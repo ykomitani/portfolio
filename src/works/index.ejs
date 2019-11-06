@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%-
+  include('../_include/_head', {
+    page: json['works'], path: '../'
+  });
+%>
+<body>
+	<div class="l-page" id="works">
+		<script type="text/javascript" src="../assets/inc/tmpl-header.js" charset="UTF-8" id="thJS"></script>
+		<main>
+            <section class="cp-information" data-aos="fade-in">
+                <div class="c-wrap">
+                    <p>test</p>
+                </div>
+            </section>
+		</main>
+		<script type="text/javascript" src="../assets/inc/tmpl-footer.js" charset="UTF-8" id="tfJS"></script>
+	</div>
+	<%-
+		include('../_include/_endBody', {
+			page: json['works'], path: '../'
+		});
+	%>
+</body>
+</html>

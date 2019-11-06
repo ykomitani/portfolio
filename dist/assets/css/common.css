@@ -282,7 +282,7 @@ sup {
   line-height: 1.5;
   text-align: left;
   letter-spacing: .15em;
-  color: #666;
+  color: #333;
   background-color: transparent;
   -webkit-font-feature-settings: 'palt';
   font-feature-settings: 'palt';
@@ -563,6 +563,10 @@ sup {
   }
 }
 
+.c-text + .c-text {
+  margin-top: 12px;
+}
+
 .c-text--center {
   text-align: center;
 }
@@ -586,114 +590,14 @@ sup {
   footer
 -------------------------------------------------------------------------------- */
 .p-footer {
-  padding: 25px 0 0;
-  background: url("../imgs/bg-footer@2x.jpg") center top;
-  background-size: cover;
+  padding: 25px 0;
+  text-align: center;
+  font-size: 10px;
 }
 
 .p-footer__inner {
   max-width: 1240px;
   margin: 0 auto;
-}
-
-.p-footer__nav {
-  padding-bottom: 23px;
-}
-
-.p-footer__navList {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-@media screen and (max-width: 768px) {
-  .p-footer__navList {
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .p-footer__navList::after {
-    content: '';
-    display: block;
-    width: 50%;
-  }
-}
-
-.p-footer__navItem {
-  margin-right: 30px;
-}
-
-@media screen and (max-width: 768px) {
-  .p-footer__navItem {
-    width: 50%;
-    margin-right: 0;
-    text-align: center;
-  }
-}
-
-.p-footer__navItem:last-child {
-  margin-right: 0;
-}
-
-.p-footer__navLink {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "Noto Sans Japanese", sans-serif;
-  font-size: 12px;
-  letter-spacing: 2.4px;
-  letter-spacing: 0.2em;
-  color: #333;
-}
-
-@media screen and (max-width: 768px) {
-  .p-footer__navLink {
-    padding: 10px 0;
-  }
-}
-
-.p-footer__navLink::after {
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 1px;
-  background: #333;
-  -webkit-transform: scale(0, 1);
-  transform: scale(0, 1);
-  -webkit-transform-origin: center top;
-  transform-origin: center top;
-  -webkit-transition: -webkit-transform .7s;
-  transition: -webkit-transform .7s;
-  transition: transform .7s;
-  transition: transform .7s, -webkit-transform .7s;
-}
-
-@media screen and (min-width: 769px) {
-  .p-footer__navLink:hover::after {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-}
-
-.p-footer__navLink.is-off {
-  pointer-events: none;
-  opacity: 0.5;
-}
-
-.p-footer__caption {
-  padding: 30px 0;
-  border-top: 1px solid #51959c;
-  border-bottom: 1px solid #51959c;
 }
 
 /* --------------------------------------------------------------------------------
@@ -720,15 +624,9 @@ sup {
 }
 
 .p-header__logo {
-  position: relative;
-  z-index: 2;
-  width: 140px;
-}
-
-@media screen and (max-width: 768px) {
-  .p-header__logo {
-    width: calc(100 / 750 * 180vw);
-  }
+  text-align: center;
+  margin: 0 auto 40px;
+  font-size: 20px;
 }
 
 .p-header__nav {
@@ -736,22 +634,13 @@ sup {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-left: 55px;
-}
-
-@media screen and (max-width: 768px) {
-  .p-header__nav {
-    display: none;
-  }
-}
-
-.p-header__nav::after {
-  content: '';
-  display: block;
-  width: calc(50% - 5px);
 }
 
 .p-header__navItem {
@@ -789,7 +678,7 @@ sup {
     content: '';
     width: 100%;
     height: 2px;
-    background: #51959c;
+    background: #f1bee2;
     -webkit-transform: scale(0, 1);
     transform: scale(0, 1);
     -webkit-transform-origin: center top;
@@ -813,7 +702,7 @@ sup {
   content: '';
   width: 100%;
   height: 2px;
-  background: #51959c;
+  background: #f1bee2;
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
@@ -859,204 +748,6 @@ sup {
 .p-header__conversionButton--reserve {
   color: #3d4751;
   background-color: #c0d2e3;
-}
-
-/* --------------------------------------------------------------------------------
-  low-main-visual
--------------------------------------------------------------------------------- */
-.p-lowMainVisual {
-  position: relative;
-  max-width: 1240px;
-  margin: 0 auto;
-}
-
-.p-lowMainVisual__title {
-  padding: 0 0 60px;
-  font-family: "Sorts Mill Goudy", serif;
-  font-size: 28px;
-  background-color: #fff;
-  text-align: center;
-  color: #51959c;
-  text-align: center;
-  line-height: 1;
-  letter-spacing: 0.3em;
-}
-
-@media screen and (max-width: 768px) {
-  .p-lowMainVisual__title {
-    position: static;
-    -webkit-transform: none;
-    transform: none;
-    padding: 15px 0 30px;
-    font-size: 20px;
-    letter-spacing: 0.29em;
-  }
-}
-
-.p-lowMainVisual__caption {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  padding: 10px 0 0;
-}
-
-@media screen and (max-width: 768px) {
-  .p-lowMainVisual__caption {
-    position: static;
-    padding: 5px 5px 0 0;
-    text-align: right;
-  }
-}
-
-/* --------------------------------------------------------------------------------
-  pageIntroduction
--------------------------------------------------------------------------------- */
-.p-pageIntroduction {
-  padding: 100px 0 80px;
-}
-
-@media screen and (max-width: 768px) {
-  .p-pageIntroduction {
-    padding: 30px 0 50px;
-  }
-}
-
-.p-pageIntroduction .c-heading {
-  padding-bottom: 40px;
-}
-
-@media screen and (max-width: 768px) {
-  .p-pageIntroduction .c-heading {
-    padding-bottom: 30px;
-    text-align: left;
-  }
-}
-
-.p-pageIntroduction .c-text {
-  text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  .p-pageIntroduction .c-text {
-    text-align: left;
-  }
-}
-
-/* --------------------------------------------------------------------------------
-  spGlobalNav
--------------------------------------------------------------------------------- */
-.p-spGlobalNav {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  opacity: 0;
-  z-index: 1000;
-  visibility: hidden;
-  -webkit-transition: .3s;
-  transition: .3s;
-  background-image: -webkit-linear-gradient(45deg, #eff9fd, #f9fbf3);
-  background-image: linear-gradient(45deg, #eff9fd, #f9fbf3);
-  z-index: 2;
-}
-
-.p-spGlobalNav.is-active {
-  opacity: 1;
-  visibility: visible;
-}
-
-@media screen and (max-width: 768px) {
-  .p-spGlobalNav {
-    display: block;
-  }
-}
-
-.p-spGlobalNav__inner {
-  height: 100%;
-  padding: 50px calc(100 / 750 * 30vw) 200px;
-  overflow-y: auto;
-}
-
-.p-spGlobalNav__heading {
-  padding-bottom: 45px;
-  font-family: "Sorts Mill Goudy", serif;
-  font-size: 12px;
-  line-height: 1;
-  letter-spacing: 0.1em;
-  text-align: center;
-  color: #51919c;
-}
-
-.p-spGlobalNav__list {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.p-spGlobalNav__list::after {
-  content: '';
-  display: block;
-  width: calc(50% - 5px);
-}
-
-.p-spGlobalNav__item {
-  width: calc(50% - 5px);
-  margin: 0 10px 20px 0;
-}
-
-.p-spGlobalNav__item:last-child {
-  margin-right: 0;
-}
-
-.p-spGlobalNav__item:nth-last-child(-n + 2) {
-  margin-bottom: 0;
-}
-
-.p-spGlobalNav__item.is-off {
-  display: none;
-}
-
-.p-spGlobalNav__item--top {
-  display: none;
-}
-
-.p-spGlobalNav__item--design, .p-spGlobalNav__item--access, .p-spGlobalNav__item--map {
-  margin-right: 0;
-}
-
-.p-spGlobalNav__link {
-  position: relative;
-  line-height: 1;
-  text-decoration: none;
-  display: block;
-  max-width: 320px;
-  margin: 0 auto;
-}
-
-.p-spGlobalNav__thumbnail {
-  -webkit-box-shadow: 10px 17.321px 20px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 10px 17.321px 20px 0px rgba(0, 0, 0, 0.1);
-}
-
-.p-spGlobalNav__name {
-  display: block;
-  padding-top: 10px;
-  line-height: 1;
-  font-size: 13px;
-  letter-spacing: 0.3em;
-  text-align: center;
 }
 
 /* --------------------------------------------------------------------------------
@@ -1319,10 +1010,6 @@ sup {
   display: none;
 }
 
-#logtag {
-  display: none;
-}
-
 /* --------------------------------------------------------------------------------
   tel
 -------------------------------------------------------------------------------- */
@@ -1334,20 +1021,4 @@ sup {
   .u-telephone {
     pointer-events: visible;
   }
-}
-
-/* --------------------------------------------------------------------------------
-  crevia-common.css change
--------------------------------------------------------------------------------- */
-@media screen and (max-width: 640px) {
-  #crevia-common-modules .crevia-common-footer {
-    padding-bottom: 120px !important;
-  }
-}
-
-#crevia-common-modules .crevia-common-contact-links {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }

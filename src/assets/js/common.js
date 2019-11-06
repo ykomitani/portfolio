@@ -114,19 +114,6 @@
 			});
 		}
 
-		if (_breakP.SP) {
-			// $spMenu.on('click', function () {
-			// 	if(spNavFlag) {
-			// 		$spMenu.removeClass('is-active');
-			// 		$gNav.fadeOut().removeClass('is-active');
-			// 		spNavFlag = false;
-			// 	} else {
-			// 		$spMenu.addClass('is-active');
-			// 		$gNav.fadeIn().addClass('is-active');
-			// 		spNavFlag = true;
-			// 	}
-			// });
-		}
 
 		/**
 		 * 各ページ固有の処理
@@ -140,70 +127,6 @@
 					easing: 'ease-in-sine',
 					delay: 500,
 					once: true,
-				});
-				break;
-			case 'plan':
-				jQuery(window).load(function() {
-					$('.cp-planlist').each(function(i, box) {
-						var maxHeight = 0;
-						$(box)
-							.find('figure')
-							.each(function() {
-								if ($(this).height() > maxHeight) maxHeight = $(this).height();
-							});
-						$(box)
-							.find('figure')
-							.height(maxHeight);
-					});
-				});
-				break;
-			case 'location':
-				// document.addEventListener('DOMContentLoaded', function() {
-				// 	var tabs = document.getElementsByClassName('js-label');
-				// 	for (var i = 0; i < tabs.length; i++) {
-				// 		tabs[i].addEventListener('click', tabSwitch, false);
-				// 	}
-
-				// 	function tabSwitch() {
-				// 		document.getElementsByClassName('is-current')[0].classList.remove('is-current');
-				// 		this.classList.add('is-current');
-				// 		document.getElementsByClassName('is-show')[0].classList.remove('is-show');
-				// 		tabs = Array.prototype.slice.call(tabs);
-				// 		var index = tabs.indexOf(this);
-				// 		document.getElementsByClassName('js-panel')[index].classList.add('is-show');
-				// 	}
-				// });
-
-				$(function() {
-					$('.js-label').on('click', function() {
-						$('.is-current').removeClass('is-current');
-						$(this).addClass('is-current');
-						$('.is-show').removeClass('is-show');
-						// クリックしたタブからインデックス番号を取得
-						var index = $(this).index();
-						// クリックしたタブと同じインデックス番号をもつコンテンツを表示
-						$('.js-panel')
-							.eq(index)
-							.addClass('is-show');
-						$('.js-map')
-							.eq(index)
-							.addClass('is-show');
-					});
-				});
-				break;
-
-			case 'map':
-				$(function() {
-					var $mapTab = $('.cp-mapTab'),
-						$mapImage = $('.cp-mapImage').find('.c-imageWrap');
-
-					$mapTab.click(function() {
-						var index = $mapTab.index(this);
-						$mapImage.removeClass('is-active');
-						$mapImage.eq(index).addClass('is-active');
-						$mapTab.removeClass('is-active');
-						$(this).addClass('is-active');
-					});
 				});
 				break;
 			default:

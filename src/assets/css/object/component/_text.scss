@@ -16,6 +16,9 @@
     font-size: 12px;
     @include ls_em(2.1, 12);
   }
+  & + & {
+    margin-top: 12px;
+  }
 
   &--center {
     text-align: center;

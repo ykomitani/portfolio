@@ -29,7 +29,9 @@ tf.createTag = function(){
 	// if(tf.onChoice.next != '') result += '<li class="next"><a href="../' + tf.onChoice.next + '/index.html">NEXT</a></li>';
 
 result += '<footer class="p-footer">';
-result += '<p>footer</p>';
+result += '<div class="c-wrap">';
+result += '<p>&copy; Portfolio of Yuriko Mitani All rights reserved.</p>';
+result += '</div>';
 result += '</footer>';
 
 

@@ -5,6 +5,14 @@
 	},
 	"top": {
 		"id": "top",
-		"title": "top"
+		"title": "Top"
+	},
+	"works": {
+		"id": "works",
+		"title": "Works"
+	},
+	"contact": {
+		"id": "contact",
+		"title": "Contact"
 	}
 }

@@ -4,7 +4,9 @@
 var incNav = incNav || {};
 incNav.onArray = [
 	// 上が優先。
-	{ dir: 'top', index: 1, layer: 1, new: false, off: false, next: '', back: '' }
+	{ dir: 'top', index: 1, layer: 1, new: false, off: false, next: '', back: '' },
+	{ dir: 'works', index: 2, layer: 1, new: false, off: false, next: '', back: '' },
+	{ dir: 'contact', index: 3, layer: 1, new: false, off: false, next: '', back: '' }
 ];
 
 /**
@@ -37,14 +39,26 @@ th.createTag = function() {
 
 	result += '<header class="p-header">';
 	result += '<div class="p-header__inner" id="js-headerInner">';
-	result += '<h1 class="p-header__logo"><a href="' + layer + 'index.html">logo</a></h1>';
+	result += '<div class="c-wrap">';
+	result += '<h1 class="p-header__logo"><a href="' + layer + 'index.html">Portfolio of Yuriko Mitani</a></h1>';
 	result += '<ul class="p-header__nav">';
 	// top
 	result += '<li class="p-header__navItem p-header__navItem--top"><a href="' + layer + '" class="p-header__navLink ';
 	if (th.onChoice.index == 0) result += 'is-current';
-	result += '">トップ</a>';
+	result += '">Top</a>';
+	result += '</li>';
+	// works
+	result += '<li class="p-header__navItem p-header__navItem--works"><a href="' + layer + 'works/" class="p-header__navLink ';
+	if (th.onChoice.index == 2) result += 'is-current';
+	result += '">Works</a>';
+	result += '</li>';
+	// contact
+	result += '<li class="p-header__navItem p-header__navItem--works"><a href="' + layer + 'contact/" class="p-header__navLink ';
+	if (th.onChoice.index == 3) result += 'is-current';
+	result += '">Contact</a>';
 	result += '</li>';
 	result += '</ul>';
+	result += '</div>';
 	result += '</div>';
 	result += '</header>';
 
