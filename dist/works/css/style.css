@@ -1,0 +1,9 @@
+.cp-information {
+  padding: 80px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .cp-information {
+    padding: 40px 0;
+  }
+}

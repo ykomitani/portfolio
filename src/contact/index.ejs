@@ -2,16 +2,17 @@
 <html lang="ja">
 <%-
   include('../_include/_head', {
-    page: json['works'], path: '../'
+    page: json['contact'], path: '../'
   });
 %>
 <body>
-	<div class="l-page" id="works">
+	<div class="l-page" id="contact">
 		<script type="text/javascript" src="../assets/inc/tmpl-header.js" charset="UTF-8" id="thJS"></script>
 		<main>
             <section class="cp-information">
                 <div class="c-wrap u-alignCenter">
-                    <p class="c-text">非公開案件もありますので、<br>実績を閲覧希望の方はお手数ですが<a href="../contact/">Contact</a>までお問い合わせください</p>
+					<p class="c-heading">Personal Email</p>
+					<p class="c-text"><a href="mailto:yko.iwata@gmail.com">yko.iwata@gmail.com</a></p>
                 </div>
             </section>
 		</main>
@@ -19,7 +20,7 @@
 	</div>
 	<%-
 		include('../_include/_endBody', {
-			page: json['works'], path: '../'
+			page: json['contact'], path: '../'
 		});
 	%>
 </body>

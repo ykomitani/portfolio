@@ -398,10 +398,10 @@ sup {
   heading
 -------------------------------------------------------------------------------- */
 .c-heading {
-  font-size: 24px;
+  margin: 30px 0 15px;
+  font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.15em;
-  text-align: center;
   color: #333;
 }
 
@@ -423,9 +423,8 @@ sup {
 
 @media screen and (max-width: 768px) {
   .c-heading {
-    font-size: 19px;
+    font-size: 16px;
     letter-spacing: 0.15263em;
-    text-align: left;
   }
 }
 
@@ -619,7 +618,7 @@ sup {
 
 @media screen and (max-width: 768px) {
   .p-header__inner {
-    padding: calc(100 / 750 * 30vw);
+    padding: 80px 0 30px;
   }
 }
 

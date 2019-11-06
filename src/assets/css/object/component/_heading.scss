@@ -7,16 +7,15 @@
   heading
 -------------------------------------------------------------------------------- */
 .c-heading {
-  font-size: 24px;
+  margin: 30px 0 15px;
+  font-size: 18px;
   line-height: 1.5;
   @include lhCrop(1.5);
   @include ls_em(3.6, 24);
-  text-align: center;
   color: $black;
 
   @include sp {
-    font-size: 19px;
+    font-size: 16px;
     @include ls_em(2.9, 19);
-    text-align: left;
   }
 }

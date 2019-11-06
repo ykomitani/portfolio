@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+@import '../../assets/css/foundation/mixin/font-size';
+@import '../../assets/css/foundation/mixin/letterspacing';
+@import '../../assets/css/foundation/mixin/lineheight';
+@import '../../assets/css/foundation/mixin/media';
+@import '../../assets/css/foundation/variable/color';
+@import '../../assets/css/foundation/variable/font';
+
+.cp-information {
+    padding: 80px 0;
+    @include sp {
+        padding: 40px 0;
+    }
+}

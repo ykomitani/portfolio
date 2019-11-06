@@ -8,10 +8,14 @@
 @import '../assets/css/foundation/variable/font';
 
 .cp-information {
-    padding: 100px 0;
-    &__list {
+    padding: 80px 0;
+    @include sp {
+        padding: 40px 0;
+    }
+    &__detail {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         @include sp {
             display: block;
         }
@@ -20,17 +24,17 @@
         width: calc(70% - 20px);
         &:last-of-type {
             width: 30%;
+            margin-top: 40px;
             @include sp {
-                width: 100%;
-                margin-top: 30px;
+                width: 60%;
                 text-align: right;
-                img {
-                    width: 60%;
-                }
             }
         }
         @include sp {
             width: 100%;
         }
+    }
+    &__list {
+        font-family: $gothic;
     }
 }
